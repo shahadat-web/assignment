@@ -1,0 +1,248 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+h1{
+font-size: 60px;
+margin: 0;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 20px;
+}
+ 
+
+
+
+/* Start Css For Nav Bar */
+
+
+nav {
+    background-color: #000000;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+ 
+
+}
+.Logo img{
+    height: 50px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+}
+
+nav a:hover {
+    color: #1ee14b;
+}
+    
+button {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #7308d7;
+    color: #fff;
+    text-decoration: none;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+    
+
+/* End Css For Nav Bar */
+
+
+/* Start Css For Banner Section */
+.Banner {
+    background-image: url(/Images/Banner\ Image.jpg);
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    height: 90vh;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.Banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    
+}
+
+.Banner-Content{
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    align-items: center;
+    width: 1200px;
+
+}
+
+
+
+/* End Css For Banner Section */
+
+
+.Services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+
+}
+
+
+.Card {
+    width: 240px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.Card img{
+    width: 150px;
+}
+
+/* Check Your Age Section */
+
+
+.age-input {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.result-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close-button:hover {
+    color: #000;
+}
+.age-input {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+#age {
+    padding: 8px;
+  }
+
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    .Banner {
+        height:500px; /* Adjust the height for smaller screens */
+    }
+
+    .Banner-Content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Banner {
+        height: 60vh; /* Adjust the height for even smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }}
+
+
+
+    @media screen and (max-width: 768px) {
+        .Services {
+            padding: 20px; 
+        }
+    
+        .Card {
+            width: 100%; 
+        }
+    
+        .age-input {
+            margin-bottom: 10px; 
+        }
+    
+        #age {
+            width: 100%; 
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .Services {
+            flex-wrap: wrap; /* Allow cards to wrap on tablet screens */
+        }
+    
+        .Card {
+            width: 48%; /* Two cards per row on tablet screens */
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .Card {
+            width: 100%; /* One card per row on mobile screens */
+        }
+    }
