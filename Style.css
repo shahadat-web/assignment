@@ -70,7 +70,7 @@ button a {
 
 /* Start Css For Banner Section */
 .Banner {
-    background-image: url(/Images/Banner\ Image.jpg);
+    background-image: url(./Images/Banner\ Image.jpg);
     background-position: top center;
     background-size: cover;
     position: relative;
