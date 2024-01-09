@@ -133,12 +133,9 @@ button a {
 }
 
 /* Check Your Age Section */
-.Age-Card{
-    display:flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    
+.Age-Card h2 {
+  text-align: center
+  
 }
 .age-input {
     text-align: center;
